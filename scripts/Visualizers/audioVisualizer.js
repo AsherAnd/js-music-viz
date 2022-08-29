@@ -32,7 +32,7 @@ const cover = document.getElementById("musicCover");
 
 // keep track of song, vol and visualizer
 let songIndex = 0;
-let visualIndex = 3;
+let visualIndex = 0;
 let visualIndexMax = 3;
 let muted = false;
 
