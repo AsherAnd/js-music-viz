@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'arame';
+    src: url(fonts/ARAME.TTF);
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'arame';
+    src: url(fonts/ARAME-BOLD.TTF);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'arame';
+    src: url(fonts/Arame\ -Thin.ttf);
+    font-style: normal;
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'arame';
+    src: url(fonts/ARAME-STENCIL.TTF);
+    font-style: oblique;
+}

@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "arame_mono";
+  src: url(fonts/Arame-Mono.ttf);
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "arame_mono";
+  src: url(fonts/Arame-Mono-Bold.ttf);
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "arame_mono";
+  src: url(fonts/Arame-Mono-Thin.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "arame_mono";
+  src: url(fonts/ARAME-MONO-STENCIL.TTF);
+  font-style: oblique;
+}

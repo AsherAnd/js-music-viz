@@ -1,0 +1,84 @@
+// custom properties added to the website
+$body-bg: rgb(30, 35, 58);
+$body-bg-gradient: rgb(10, 13, 21);
+$body-color: white;
+$primary: rgb(167, 24, 20);
+$dark: hsl(231, 33%, 4%);
+$font-family-sans-serif: "arame", sans-serif;
+$enable-gradients: false;
+$bg-gradient: linear-gradient(
+  360deg,
+  rgba($body-bg, 1) 20%,
+  rgba(black, 0.75) 100%
+) !default;
+$dropdown-dark-link-color: $primary;
+$dropdown-dark-link-hover-bg: $primary;
+$dropdown-dark-bg: $dark;
+$navbar-dark-active-color: white;
+$navbar-dark-hover-color: white;
+$navbar-dark-color: $primary;
+$navbar-dark-toggler-border-color: $primary;
+
+#audioFeatures :hover,
+#playControls :hover {
+  cursor: default;
+  color: $navbar-dark-hover-color;
+}
+
+body {
+  background-color: black;
+  background-attachment: fixed;
+  background-image: $bg-gradient;
+  background-repeat: no-repeat;
+  color: white !important;
+  font-family: "arame";
+  font-style: oblique;
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+#deviceAudio.active,
+#repeat.active,
+#shuffleMusic.active {
+  color: $navbar-dark-active-color;
+}
+
+.navbar {
+  font-size: large;
+  box-shadow: 0px 4px 16px -6px rgba(($primary), 0.6);
+}
+
+#musicContainer {
+  background-color: $dark;
+}
+
+#progress {
+  background-color: $primary;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+#playControls {
+  user-select: none;
+}
+
+.progressContainer {
+  background-color: $body-bg;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  height: 10px;
+}
+
+#visualizer {
+  font-size: 25px;
+}
+
+#volume {
+  font-size: 25px;
+}
+
+@import "../node_modules/bootstrap/scss/bootstrap";
