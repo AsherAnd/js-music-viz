@@ -81,4 +81,24 @@ body {
   font-size: 25px;
 }
 
+.fullQuote {
+  cursor: default;
+}
+
+#quote {
+  font-family: raker_display;
+  font-style: oblique;
+  font-size: 3em;
+  margin-top: 30vh;
+}
+
+#quotee {
+  font-family: raker_display;
+  font-style: italic;
+  color: $primary;
+  font-size: 4em;
+  margin-top: 0.5em;
+  margin-left: 6em;
+  margin-bottom: -0.125em;
+}
 @import "../node_modules/bootstrap/scss/bootstrap";
