@@ -1,9 +1,9 @@
 function getPlaylist() {
   // load song
-  loadJSON("../scripts/soundtracks.json", function (data) {
+  loadJSON("scripts/soundtracks.json", function (data) {
     playlist = data;
     // get availabe album covers for songs
-    loadJSON("../scripts/covers.json", function (coverData) {
+    loadJSON("scripts/covers.json", function (coverData) {
       for (let i = 0; i < coverData.covers.length; i++) {
         covers.push(coverData.covers[i]["file name"]);
       }
