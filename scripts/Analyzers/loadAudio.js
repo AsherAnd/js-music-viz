@@ -1,9 +1,9 @@
 function getPlaylist() {
   // load song
-  loadJSON("../../scripts/soundtracks.json", function (data) {
+  loadJSON("../scripts/soundtracks.json", function (data) {
     playlist = data;
     // get availabe album covers for songs
-    loadJSON("../../scripts/covers.json", function (coverData) {
+    loadJSON("../scripts/covers.json", function (coverData) {
       for (let i = 0; i < coverData.covers.length; i++) {
         covers.push(coverData.covers[i]["file name"]);
       }
@@ -16,7 +16,7 @@ function getPlaylist() {
 function loadSong(track) {
   title.innerText = track.title;
   artist.innerText = track.artist;
-  audio.src = `../../assets/music/audio/${track["file name"]}`;
+  audio.src = `../assets/music/audio/${track["file name"]}`;
 
   // remove special characters from album name
   var tempAlbum =
@@ -26,9 +26,9 @@ function loadSong(track) {
 
   // check if album cover exists
   if (tempAlbum != null && covers.includes(tempAlbum)) {
-    cover.src = `../../assets/music/image/${tempAlbum}`;
+    cover.src = `../assets/music/image/${tempAlbum}`;
   } else {
-    cover.src = `../../assets/music/image/Unknown.png`;
+    cover.src = `../assets/music/image/Unknown.png`;
   }
 
   mappedCover = [];
