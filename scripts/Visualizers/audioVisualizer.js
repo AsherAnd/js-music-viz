@@ -36,7 +36,6 @@ let visualIndexMax = 3;
 let muted = false;
 
 // playlist
-const covers = [];
 let playlist = new Playlist();
 
 // create reusable audio context
