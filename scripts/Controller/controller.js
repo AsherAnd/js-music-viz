@@ -76,6 +76,8 @@ function nextButton() {
   }
 
   playlist.loadSong();
+  mappedCover = [];
+  particlesVisual = [];
 
   if (isPlaying) {
     playSong();
@@ -116,6 +118,8 @@ function previousButton() {
   }
 
   playlist.loadSong();
+  mappedCover = [];
+  particlesVisual = [];
 
   if (isPlaying) {
     playSong();

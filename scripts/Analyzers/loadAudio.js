@@ -5,7 +5,10 @@ function getPlaylist() {
       playlist.createSong(data["tracks"][i]);
     }
     console.log(playlist);
+
     playlist.loadSong();
+    mappedCover = [];
+    particlesVisual = [];
   });
 }
 
@@ -74,9 +77,6 @@ class Playlist {
     artist.innerText = this.songs[this.index].artist;
     audio.src = `assets/music/audio/${this.songs[this.index].fileName}`;
     cover.src = `assets/music/image/${this.songs[this.index].cover}`;
-
-    mappedCover = [];
-    particlesVisual = [];
   }
 
   get length() {
