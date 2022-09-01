@@ -19,6 +19,10 @@ $navbar-dark-hover-color: white;
 $navbar-dark-color: $primary;
 $navbar-dark-toggler-border-color: $primary;
 
+.active {
+  color: $navbar-dark-active-color;
+}
+
 #audioFeatures :hover,
 #playControls :hover {
   cursor: default;
@@ -36,12 +40,6 @@ body {
   max-width: 100%;
   overflow-x: hidden;
   position: relative;
-}
-
-#deviceAudio.active,
-#repeat.active,
-#shuffleMusic.active {
-  color: $navbar-dark-active-color;
 }
 
 .navbar {

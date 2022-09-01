@@ -52,7 +52,17 @@ function deviceAudioButton() {
 }
 
 function loopButton() {
-  console.log("Loop Button Clicked");
+  const isLooping = musicContainer.classList.contains("repeat");
+
+  if (isLooping) {
+    musicContainer.classList.remove("repeat");
+    loopBtn.innerHTML =
+      '<span class="material-icons" style="font-size:25px;">repeat</span>';
+  } else {
+    musicContainer.classList.add("repeat");
+    loopBtn.innerHTML =
+      '<span class="material-icons" style="font-size:25px;">repeat_one</span>';
+  }
 }
 
 function muteVolume() {
@@ -69,7 +79,11 @@ function muteVolume() {
 
 function nextButton() {
   const isPlaying = musicContainer.classList.contains("play");
-  playlist.index += 1;
+  const isLooping = musicContainer.classList.contains("repeat");
+
+  if (!isLooping) {
+    playlist.index += 1;
+  }
 
   if (playlist.index >= playlist.length) {
     playlist.index = 0;
@@ -111,7 +125,11 @@ function playSong() {
 
 function previousButton() {
   const isPlaying = musicContainer.classList.contains("play");
-  playlist.index -= 1;
+  const isLooping = musicContainer.classList.contains("repeat");
+
+  if (!isLooping) {
+    playlist.index -= 1;
+  }
 
   if (playlist.index < 0) {
     playlist.index = playlist.length - 1;
