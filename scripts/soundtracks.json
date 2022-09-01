@@ -8,6 +8,20 @@
             "cover": "i am  i was.jpg"
         },
         {
+            "artist": "21 Savage",
+            "title": "monster",
+            "album": "i am > i was",
+            "file name": "21 Savage - monster.mp3",
+            "cover": "i am  i was.jpg"
+        },
+        {
+            "artist": "Baby Keem",
+            "title": "hooligan",
+            "album": "hooligan / sons & critics",
+            "file name": "Baby Keem - hooligan.mp3",
+            "cover": "hooligan  sons & critics.jpg"
+        },
+        {
             "artist": "Bas feat. J. Cole",
             "title": "Tribe",
             "album": "Milky Way",
@@ -222,7 +236,7 @@
             "title": "Lucid Dreams",
             "album": "Goodbye & Good Riddance",
             "file name": "Juice WRLD - Lucid Dreams.mp3",
-            "cover": "Unknown.png"
+            "cover": "Goodbye & Good Riddance.jpg"
         },
         {
             "artist": "Juice WRLD",
@@ -314,6 +328,13 @@
             "album": "Still Sleep?",
             "file name": "Sleepy Hallow - 2055.m4a",
             "cover": "Still Sleep.jpg"
+        },
+        {
+            "artist": "Sunny 2point0",
+            "title": "Man Down",
+            "album": "",
+            "file name": "Sunny 2point0 - Man Down.mp3",
+            "cover": "Unknown.png"
         },
         {
             "artist": "The Kid LAROI",

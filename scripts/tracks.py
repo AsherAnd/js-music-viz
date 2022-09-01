@@ -39,7 +39,7 @@ def main():
             cover = (
                 "Unknown.png"
                 if song.album is None
-                else re.sub("[^a-zA-Z0-9. ]+", "", song.album) + ".jpg"
+                else re.sub("[^a-zA-Z0-9&. ]+", "", song.album) + ".jpg"
             )
 
             # check if song cover exists
