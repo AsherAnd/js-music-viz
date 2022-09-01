@@ -4,301 +4,351 @@
             "artist": "21 Savage",
             "title": "a lot",
             "album": "i am > i was",
-            "file name": "21 Savage - A Lot (Official Audio).m4a"
+            "file name": "21 Savage - A Lot (Official Audio).m4a",
+            "cover": "i am  i was.jpg"
         },
         {
             "artist": "Bas feat. J. Cole",
             "title": "Tribe",
             "album": "Milky Way",
-            "file name": "Bas & J. Cole - Tribe (Official Audio).m4a"
+            "file name": "Bas & J. Cole - Tribe (Official Audio).m4a",
+            "cover": "Milky Way.jpg"
         },
         {
             "artist": "Bas",
             "title": "Purge",
             "album": "Milky Way",
-            "file name": "Bas - Purge.mp3"
+            "file name": "Bas - Purge.mp3",
+            "cover": "Milky Way.jpg"
         },
         {
             "artist": "Bas with J. Cole and Lil Tjay",
             "title": "The Jackie",
             "album": "The Jackie",
-            "file name": "Bas, J. Cole - The Jackie ft. Lil Tjay.m4a"
+            "file name": "Bas, J. Cole - The Jackie ft. Lil Tjay.m4a",
+            "cover": "The Jackie.jpg"
         },
         {
             "artist": "bbno$ Feat. Diamond Pistols & BENEE",
             "title": "help herself",
             "album": "my oh my",
-            "file name": "Bbno$ & Diamond Pistols - Help Herself.m4a"
+            "file name": "Bbno$ & Diamond Pistols - Help Herself.m4a",
+            "cover": "my oh my.jpg"
         },
         {
             "artist": "bbno$",
             "title": "mathematics",
             "album": "",
-            "file name": "Bbno$ - Mathematics.mp3"
+            "file name": "Bbno$ - Mathematics.mp3",
+            "cover": "Unknown.png"
         },
         {
             "artist": "bbno$",
             "title": "sorry",
             "album": "my oh my",
-            "file name": "Bbno$ - Sorry (prod. dwilly).m4a"
+            "file name": "Bbno$ - Sorry (prod. dwilly).m4a",
+            "cover": "my oh my.jpg"
         },
         {
             "artist": "Chance the Rapper feat. Saba",
             "title": "Angels",
             "album": "Coloring Book",
-            "file name": "Chance the Rapper - Angels ft.mp3"
+            "file name": "Chance the Rapper - Angels ft.mp3",
+            "cover": "Coloring Book.jpg"
         },
         {
             "artist": "Childish Gambino feat. Chance the Rapper",
             "title": "I. The Worst Guys",
             "album": "Because the Internet",
-            "file name": "Childish Gambino-i-the-worst-guys.mp3"
+            "file name": "Childish Gambino-i-the-worst-guys.mp3",
+            "cover": "Because the Internet.jpg"
         },
         {
             "artist": "Childish Gambino",
             "title": "Kids (Keep Up)",
             "album": "Camp",
-            "file name": "Childish Gambino-kids.mp3"
+            "file name": "Childish Gambino-kids.mp3",
+            "cover": "Camp.jpg"
         },
         {
             "artist": "Dave",
             "title": "Starlight",
             "album": "Starlight",
-            "file name": "Dave - starlight.mp3"
+            "file name": "Dave - starlight.mp3",
+            "cover": "Starlight.jpg"
         },
         {
             "artist": "Drake",
             "title": "Do Not Disturb",
             "album": "More Life",
-            "file name": "Drake - Do-not-disturb.mp3"
+            "file name": "Drake - Do-not-disturb.mp3",
+            "cover": "More Life.jpg"
         },
         {
             "artist": "Drake feat. Travis Scott",
             "title": "Fair Trade",
             "album": "Certified Lover Boy",
-            "file name": "Drake - Fair Trade ft. Travis Scott.m4a"
+            "file name": "Drake - Fair Trade ft. Travis Scott.m4a",
+            "cover": "Certified Lover Boy.jpg"
         },
         {
             "artist": "Dreamville feat. JID, Bas, J. Cole, EARTHGANG & Young Nudy",
             "title": "Down Bad",
             "album": "Down Bad",
-            "file name": "Dreamville-down-bad-ft-jid-bas-j-cole-earthgang-and-young-nudy-official-audio.mp3"
+            "file name": "Dreamville-down-bad-ft-jid-bas-j-cole-earthgang-and-young-nudy-official-audio.mp3",
+            "cover": "Down Bad.jpg"
         },
         {
             "artist": "Future feat. Drake & Tems",
             "title": "WAIT FOR U",
             "album": "I NEVER LIKED YOU",
-            "file name": "Future - wait-for-u.mp3"
+            "file name": "Future - wait-for-u.mp3",
+            "cover": "I NEVER LIKED YOU.jpg"
         },
         {
             "artist": "J. Cole",
             "title": "ATM",
             "album": "KOD",
-            "file name": "J. Cole - ATM.m4a"
+            "file name": "J. Cole - ATM.m4a",
+            "cover": "KOD.jpg"
         },
         {
             "artist": "J. Cole",
             "title": "Heaven's EP",
             "album": null,
-            "file name": "J. Cole - Heaven's EP.m4a"
+            "file name": "J. Cole - Heaven's EP.m4a",
+            "cover": "Unknown.png"
         },
         {
             "artist": "J. Cole",
             "title": "Is She Gon Pop",
             "album": "Born Sinner",
-            "file name": "J. Cole - Is She Gon Pop.m4a"
+            "file name": "J. Cole - Is She Gon Pop.m4a",
+            "cover": "Born Sinner.jpg"
         },
         {
             "artist": "J. Cole",
             "title": "Lion King On Ice",
             "album": "Lewis Street",
-            "file name": "J. Cole - Lion King On Ice (Official Audio).m4a"
+            "file name": "J. Cole - Lion King On Ice (Official Audio).m4a",
+            "cover": "Lewis Street.jpg"
         },
         {
             "artist": "J. Cole",
             "title": "Snow On Tha Bluff",
             "album": "Snow On Tha Bluff",
-            "file name": "J. Cole - Snow On Tha Bluff (Official Audio).m4a"
+            "file name": "J. Cole - Snow On Tha Bluff (Official Audio).m4a",
+            "cover": "Unknown.png"
         },
         {
             "artist": "JID feat. Baby Tate & 21 Savage",
             "title": "Surround Sound",
             "album": "Surround Sound",
-            "file name": "JID - surround-sound-official-audio-feat-21-savage-and-baby-tate.mp3"
+            "file name": "JID - surround-sound-official-audio-feat-21-savage-and-baby-tate.mp3",
+            "cover": "Surround Sound.jpg"
         },
         {
             "artist": "Joji",
             "title": "Gimme Love",
             "album": "Gimme Love",
-            "file name": "Joji - Gimme Love (Official Video).m4a"
+            "file name": "Joji - Gimme Love (Official Video).m4a",
+            "cover": "Gimme Love.jpg"
         },
         {
             "artist": "Joji",
             "title": "Glimpse of Us",
             "album": "Glimpse of Us",
-            "file name": "Joji - Glimpse-of-us.mp3"
+            "file name": "Joji - Glimpse-of-us.mp3",
+            "cover": "Glimpse of Us.jpg"
         },
         {
             "artist": "Joyner Lucas feat. J. Cole",
             "title": "Your Heart",
             "album": "Your Heart",
-            "file name": "Joyner Lucas & J. Cole - Your Heart.m4a"
+            "file name": "Joyner Lucas & J. Cole - Your Heart.m4a",
+            "cover": "Your Heart.jpg"
         },
         {
             "artist": "Joyner Lucas",
             "title": "Revenge",
             "album": "ADHD",
-            "file name": "Joyner Lucas - Revenge.m4a"
+            "file name": "Joyner Lucas - Revenge.m4a",
+            "cover": "ADHD.jpg"
         },
         {
             "artist": "Joyner Lucas",
             "title": "Will",
             "album": "ADHD",
-            "file name": "Joyner Lucas - Will.m4a"
+            "file name": "Joyner Lucas - Will.m4a",
+            "cover": "ADHD.jpg"
         },
         {
             "artist": "Juice WRLD",
             "title": "Already Dead",
             "album": "[non-album tracks]",
-            "file name": "Juice WRLD - Already Dead (Official Audio).m4a"
+            "file name": "Juice WRLD - Already Dead (Official Audio).m4a",
+            "cover": "Unknown.png"
         },
         {
             "artist": "Juice WRLD",
             "title": "Can\u2019t Die",
             "album": "Legends Never Die",
-            "file name": "Juice WRLD - Can't Die (Official Audio).m4a"
+            "file name": "Juice WRLD - Can't Die (Official Audio).m4a",
+            "cover": "Legends Never Die.jpg"
         },
         {
             "artist": "Juice WRLD",
             "title": "Doom",
             "album": "Fighting Demons",
-            "file name": "Juice WRLD - Doom (Official Audio).m4a"
+            "file name": "Juice WRLD - Doom (Official Audio).m4a",
+            "cover": "Fighting Demons.jpg"
         },
         {
             "artist": "Juice WRLD",
             "title": "Flaws and Sins",
             "album": "Death Race for Love",
-            "file name": "Juice WRLD - Flaws and Sins (Official Audio).m4a"
+            "file name": "Juice WRLD - Flaws and Sins (Official Audio).m4a",
+            "cover": "Death Race for Love.jpg"
         },
         {
             "artist": "Juice WRLD",
             "title": "Keep it (unreleased)",
             "album": "",
-            "file name": "Juice WRLD - Keep-it-unreleased.mp3"
+            "file name": "Juice WRLD - Keep-it-unreleased.mp3",
+            "cover": "Unknown.png"
         },
         {
             "artist": "Juice WRLD",
             "title": "Lucid Dreams",
             "album": "Goodbye & Good Riddance",
-            "file name": "Juice WRLD - Lucid Dreams.mp3"
+            "file name": "Juice WRLD - Lucid Dreams.mp3",
+            "cover": "Unknown.png"
         },
         {
             "artist": "Juice WRLD",
             "title": "Not Enough",
             "album": "Fighting Demons",
-            "file name": "Juice WRLD - Not Enough (Official Audio).m4a"
+            "file name": "Juice WRLD - Not Enough (Official Audio).m4a",
+            "cover": "Fighting Demons.jpg"
         },
         {
             "artist": "Juice WRLD",
             "title": "Outer Space (Unreleased)",
             "album": null,
-            "file name": "Juice WRLD - Outer Space (Unreleased).m4a"
+            "file name": "Juice WRLD - Outer Space (Unreleased).m4a",
+            "cover": "Unknown.png"
         },
         {
             "artist": "Juice WRLD",
             "title": "Relocate",
             "album": "Fighting Demons",
-            "file name": "Juice WRLD - Relocate (Official Audio).m4a"
+            "file name": "Juice WRLD - Relocate (Official Audio).m4a",
+            "cover": "Fighting Demons.jpg"
         },
         {
             "artist": "Juice WRLD",
             "title": "Wishing Well",
             "album": "Legends Never Die",
-            "file name": "Juice WRLD - Wishing Well (Official Music Video).m4a"
+            "file name": "Juice WRLD - Wishing Well (Official Music Video).m4a",
+            "cover": "Legends Never Die.jpg"
         },
         {
             "artist": "King Von & 21 Savage",
             "title": "Don\u2019t Play That",
             "album": "What It Means to Be King",
-            "file name": "King Von - dont-play-that-official-visualizer.mp3"
+            "file name": "King Von - dont-play-that-official-visualizer.mp3",
+            "cover": "What It Means to Be King.jpg"
         },
         {
             "artist": "Masego",
             "title": "Navajo",
             "album": "Navajo",
-            "file name": "Masego - Navajo.m4a"
+            "file name": "Masego - Navajo.m4a",
+            "cover": "Navajo.jpg"
         },
         {
             "artist": "\u677e\u539f\u307f\u304d",
             "title": "\u771f\u591c\u4e2d\u306e\u30c9\u30a2\uff5eStay With Me",
             "album": "\u6b4c\u59eb\u301c\u30c9\u30e9\u30a4\u30f4\u30a3\u30f3\u30fb\u30d9\u30b9\u30c8\u301c",
-            "file name": "Miki Matsubara - stay-with-me.mp3"
+            "file name": "Miki Matsubara - stay-with-me.mp3",
+            "cover": "Unknown.png"
         },
         {
             "artist": "Pharrell Williams feat. 21 Savage & Tyler, the Creator",
             "title": "Cash In Cash Out",
             "album": "Cash In Cash Out",
-            "file name": "Pharrell - cash-in-cash-out-official-audio-ft-21-savage-tyler-the-creator.mp3"
+            "file name": "Pharrell - cash-in-cash-out-official-audio-ft-21-savage-tyler-the-creator.mp3",
+            "cover": "Cash In Cash Out.jpg"
         },
         {
             "artist": "Polo G",
             "title": "I Know",
             "album": "THE GOAT",
-            "file name": "Polo G - I Know.m4a"
+            "file name": "Polo G - I Know.m4a",
+            "cover": "THE GOAT.jpg"
         },
         {
             "artist": "Polo G",
             "title": "RAPSTAR",
             "album": "Hall of Fame 2.0",
-            "file name": "Polo G - RAPSTAR.m4a"
+            "file name": "Polo G - RAPSTAR.m4a",
+            "cover": "Hall of Fame 2.0.jpg"
         },
         {
             "artist": "Post Malone feat. Gunna",
             "title": "I Cannot Be (A Sadder Song)",
             "album": "I Cannot Be (A Sadder Song)",
-            "file name": "Post Malone - I Cannot Be (a sadder song) ft-gunna.mp3"
+            "file name": "Post Malone - I Cannot Be (a sadder song) ft-gunna.mp3",
+            "cover": "I Cannot Be A Sadder Song.jpg"
         },
         {
             "artist": "Post Malone and The Weeknd",
             "title": "One Right Now",
             "album": "One Right Now",
-            "file name": "Post Malone, The Weeknd - One Right Now.m4a"
+            "file name": "Post Malone, The Weeknd - One Right Now.m4a",
+            "cover": "One Right Now.jpg"
         },
         {
             "artist": "Sleepy Hallow",
             "title": "2055",
             "album": "Still Sleep?",
-            "file name": "Sleepy Hallow - 2055.m4a"
+            "file name": "Sleepy Hallow - 2055.m4a",
+            "cover": "Still Sleep.jpg"
         },
         {
             "artist": "The Kid LAROI",
             "title": "BAD NEWS",
             "album": "FUCK LOVE 3+: OVER YOU",
-            "file name": "The Kid LAROI - BAD NEWS.m4a"
+            "file name": "The Kid LAROI - BAD NEWS.m4a",
+            "cover": "FUCK LOVE 3 OVER YOU.jpg"
         },
         {
             "artist": "The Kid LAROI",
             "title": "I DON\u2019T KNOW",
             "album": "FUCK LOVE 3+: OVER YOU",
-            "file name": "The Kid LAROI - I DON'T KNOW.m4a"
+            "file name": "The Kid LAROI - I DON'T KNOW.m4a",
+            "cover": "FUCK LOVE 3 OVER YOU.jpg"
         },
         {
             "artist": "The Kid LAROI",
             "title": "SAME ENERGY",
             "album": "FUCK LOVE 3+: OVER YOU",
-            "file name": "The Kid LAROI - SAME ENERGY.m4a"
+            "file name": "The Kid LAROI - SAME ENERGY.m4a",
+            "cover": "FUCK LOVE 3 OVER YOU.jpg"
         },
         {
             "artist": "The Kid LAROI feat. Mustard",
             "title": "STILL CHOSE YOU",
             "album": "FUCK LOVE 3+: OVER YOU",
-            "file name": "The Kid LAROI - STILL CHOSE YOU (Official Audio) ft. Mustard.m4a"
+            "file name": "The Kid LAROI - STILL CHOSE YOU (Official Audio) ft. Mustard.m4a",
+            "cover": "FUCK LOVE 3 OVER YOU.jpg"
         },
         {
             "artist": "Trippie Redd & Juice WRLD",
             "title": "Matt Hardy 999",
             "album": "Trip at Knight",
-            "file name": "Trippie Redd - Matt Hardy 999 ft. Juice WRLD.m4a"
+            "file name": "Trippie Redd - Matt Hardy 999 ft. Juice WRLD.m4a",
+            "cover": "Trip at Knight.jpg"
         }
     ]
 }

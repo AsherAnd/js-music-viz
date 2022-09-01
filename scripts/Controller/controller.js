@@ -69,13 +69,13 @@ function muteVolume() {
 
 function nextButton() {
   const isPlaying = musicContainer.classList.contains("play");
-  songIndex += 1;
+  playlist.index += 1;
 
-  if (songIndex >= playlist.tracks.length) {
-    songIndex = 0;
+  if (playlist.index >= playlist.length) {
+    playlist.index = 0;
   }
 
-  loadSong(playlist.tracks[songIndex]);
+  playlist.loadSong();
 
   if (isPlaying) {
     playSong();
@@ -109,13 +109,13 @@ function playSong() {
 
 function previousButton() {
   const isPlaying = musicContainer.classList.contains("play");
-  songIndex -= 1;
+  playlist.index -= 1;
 
-  if (songIndex < 0) {
-    songIndex = playlist.tracks.length - 1;
+  if (playlist.index < 0) {
+    playlist.index = playlist.length - 1;
   }
 
-  loadSong(playlist.tracks[songIndex]);
+  playlist.loadSong();
 
   if (isPlaying) {
     playSong();

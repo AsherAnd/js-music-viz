@@ -1,52 +1,71 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #   Created by: Asher Andargachew                                             #
 #                                                                             #
-#   Created on: Jan 11, 2022                                                  #
+#   Created on: Sept 1, 2022                                                  #
 #                                                                             #
 #   Description: This is a python script to automatically go through          #
-#                the track directory, get the metadata and list               #
-#                it inside of a json to then use for the site                 #
+#                the track and cover directory, get the metadata and add      #
+#                them inside a json to then use for the site                  #
 #                RUN THIS PROGRAM TO ADD NEW SONGS EASILY                     #
 #                                                                             #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 import json
-from tinytag import TinyTag
 import os
+import re
+from tinytag import TinyTag
 
 
 def main():
     print("Metadata extraction started...")
 
-    # get path to music
     cwd = os.getcwd()
     direc_name = os.path.dirname(cwd)
-    music_path = os.path.join(direc_name, r"assets\music\audio")
+    music_path = os.path.join(direc_name, "assets", "music", "audio")
+    cover_path = os.path.join(direc_name, "assets", "music", "image")
 
-    # contain track info in a dictionary
     tracks = {"tracks": []}
 
-    # go to file directory
-    for root, dir, files in os.walk(music_path):
-        # go through each file in the folder
-        for index, name in enumerate(files):
-            # get info if it is a music file
-            if name.endswith(("m4a", "mp3")):
-                song = TinyTag.get(root + "\\" + name)
-                tracks["tracks"].append(
-                    {
-                        "artist": song.artist,
-                        "title": song.title,
-                        "album": song.album,
-                        "file name": name,
-                    }
-                )
+    # move to music path
+    os.chdir(music_path)
+
+    for file in os.listdir(music_path):
+        if os.path.isfile(file) and file.endswith(("m4a", "mp3")):
+            # get song meta data
+            song = TinyTag.get(file)
+
+            # move to cover path
+            os.chdir(cover_path)
+            cover = (
+                "Unknown.png"
+                if song.album is None
+                else re.sub("[^a-zA-Z0-9. ]+", "", song.album) + ".jpg"
+            )
+
+            # check if song cover exists
+            if not os.path.exists(cover):
+                cover = "Unknown.png"
+
+            # add song to track list
+            tracks["tracks"].append(
+                {
+                    "artist": song.artist,
+                    "title": song.title,
+                    "album": song.album,
+                    "file name": file,
+                    "cover": cover,
+                }
+            )
+        os.chdir(music_path)
+
+    # move back to original directory
+    os.chdir(cwd)
 
     # write to json file
     with open("soundtracks.json", "w") as f:
         json.dump(tracks, f, indent=4)
 
-    return "Done"
+    return f"Done, added: {len(tracks['tracks'])} track(s)"
 
 
 if __name__ == "__main__":

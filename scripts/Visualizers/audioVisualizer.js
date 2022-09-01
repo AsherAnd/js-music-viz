@@ -31,14 +31,13 @@ const artist = document.getElementById("musicArtist");
 const cover = document.getElementById("musicCover");
 
 // keep track of song, vol and visualizer
-let songIndex = 0;
 let visualIndex = 0;
 let visualIndexMax = 3;
 let muted = false;
 
 // playlist
 const covers = [];
-let playlist = [];
+let playlist = new Playlist();
 
 // create reusable audio context
 const audioContext = new AudioContext();
