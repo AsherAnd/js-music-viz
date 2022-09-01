@@ -20,21 +20,6 @@ class Song {
     this.fileName = fileName;
     this.cover = cover;
   }
-  getTitle() {
-    return this.title;
-  }
-  getArtist() {
-    return this.artist;
-  }
-  getAlbum() {
-    return this.album;
-  }
-  getFileName() {
-    return this.fileName;
-  }
-  getCover() {
-    return this.cover;
-  }
 }
 
 class Playlist {
