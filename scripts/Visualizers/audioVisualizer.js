@@ -21,6 +21,7 @@ const progressContainer = document.getElementById("progressContainer");
 
 const volumeBtn = document.getElementById("volume");
 const volumeSlider = document.getElementById("myRange");
+const musicQueue = document.getElementById("musicQueue");
 const visualizerBtn = document.getElementById("visualizer");
 const spotifyBtn = document.getElementById("spotify");
 const deviceAudioBtn = document.getElementById("deviceAudio");

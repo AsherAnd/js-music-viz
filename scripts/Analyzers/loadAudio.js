@@ -1,8 +1,38 @@
+// add playlist to queue list
+function addQueue(song) {
+  musicQueue.innerHTML += `
+  <div class="col">
+  <div class="d-flex align-items-center">
+    <div class="flex-shrink-0">
+      <img
+        src="assets/music/image/${song.cover}"
+        style="width: 64px; height: 64px"
+        alt="Cover Image"
+      />
+    </div>
+    <div class="flex-grow-1 mx-3">
+      <div class="musicInfo" id="musicInfo">
+        <p class="queueTitle">${song.title}</p>
+        <p class="queueArtist">${song.artist}</p>
+      </div>
+    </div>
+  </div>
+</div><hr />`;
+}
+
 function getPlaylist() {
   // load song
   loadJSON("scripts/soundtracks.json", function (data) {
     for (i = 0; i < data["tracks"].length; i++) {
-      playlist.createSong(data["tracks"][i]);
+      var artist = data["tracks"][i]["artist"];
+      var title = data["tracks"][i]["title"];
+      var album = data["tracks"][i]["album"];
+      var fileName = data["tracks"][i]["file name"];
+      var cover = data["tracks"][i]["cover"];
+
+      var song = new Song(artist, title, album, fileName, cover);
+      playlist.add(song);
+      addQueue(song);
     }
     console.log(playlist);
 
@@ -28,17 +58,6 @@ class Playlist {
     this.head = 0;
     this.tail = 0;
     this.index = 0;
-  }
-
-  createSong(data) {
-    var song = new Song(
-      data["artist"],
-      data["title"],
-      data["album"],
-      data["file name"],
-      data["cover"]
-    );
-    this.add(song);
   }
 
   add(song) {

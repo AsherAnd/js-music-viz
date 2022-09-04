@@ -51,6 +51,16 @@ body {
   background-color: $dark;
 }
 
+#offcanvas-body {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#offcanvas-body::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
 #progress {
   background-color: $primary;
   border-radius: 5px;
@@ -69,6 +79,11 @@ body {
   cursor: pointer;
   width: 100%;
   height: 10px;
+}
+
+.queueArtist,
+.queueTitle {
+  margin-bottom: 0rem;
 }
 
 #visualizer {

@@ -91,6 +91,7 @@
             </div>
           </div>
         </div>
+
         <div class="col-6">
           <div
             class="col d-flex justify-content-center align-items-center mt-2"
@@ -127,17 +128,20 @@
             <div class="progress" id="progress"></div>
           </div>
         </div>
+
         <div id="audioFeatures" class="col-3 d-flex align-items-center">
           <div id="visualizerIcon" class="visual px-2">
             <span class="material-icons" style="font-size: 25px" id="visualizer"
               >leaderboard</span
             >
           </div>
+
           <div id="volumeIcon" class="vol">
             <span class="material-icons" style="font-size: 25px" id="volume"
               >volume_up</span
             >
           </div>
+
           <div class="slidecontainer px-2">
             <input
               type="range"
@@ -149,14 +153,23 @@
               id="myRange"
             />
           </div>
-          <div id="musicLibrary" class="musicLibrary px-2">
+
+          <div
+            id="musicLibrary"
+            class="musicLibrary px-2"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasQueue"
+            aria-controls="offcanvasQueue"
+          >
             <span class="material-icons" style="font-size: 25px" id="queue"
               >queue_music</span
             >
           </div>
+
           <div id="spotify" class="spotify px-2 mb-1">
             <i class="fa fa-spotify" style="font-size: 25px"></i>
           </div>
+
           <div id="deviceSound" class="deviceSound px-2">
             <span
               class="material-icons"
@@ -164,6 +177,22 @@
               id="deviceAudio"
               >computer</span
             >
+          </div>
+        </div>
+
+        <div
+          class="offcanvas offcanvas-start bg-dark"
+          tabindex="-1"
+          id="offcanvasQueue"
+          aria-labelledby="offcanvasQueueLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasQueueLabel">
+              Music Playlist
+            </h5>
+          </div>
+          <div class="container-fluid" id="offcanvas-body">
+            <div id="musicQueue"></div>
           </div>
         </div>
       </div>
