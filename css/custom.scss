@@ -86,6 +86,7 @@ body {
   color: $primary;
   font-family: "arame";
   font-style: oblique;
+  overflow-x: hidden;
 }
 
 [class*="col"] {

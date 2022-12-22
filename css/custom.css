@@ -72,6 +72,7 @@ body {
   color: rgb(167, 24, 20);
   font-family: "arame";
   font-style: oblique;
+  overflow-x: hidden;
 }
 
 [class*=col] {
