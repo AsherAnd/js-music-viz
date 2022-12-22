@@ -1,20 +1,22 @@
 // add playlist to queue list
 function addQueue(song) {
   musicQueue.innerHTML += `
-  <div class="col">
-  <div class="d-flex align-items-center">
-    <div class="flex-shrink-0">
+  <div class="row">
+  <div class="col-12" style="padding: 10px">
+    <div class="row">
+    <div class="col-2" style="padding: 0">
       <img
         src="assets/music/image/${song.cover}"
         style="width: 64px; height: 64px"
         alt="Cover Image"
       />
     </div>
-    <div class="flex-grow-1 mx-3">
+    <div class="col-10" style="display:flex; align-items:center; padding: 0">
       <div class="musicInfo" id="musicInfo">
         <p class="queueTitle">${song.title}</p>
         <p class="queueArtist">${song.artist}</p>
       </div>
+    </div>
     </div>
   </div>
 </div><hr />`;

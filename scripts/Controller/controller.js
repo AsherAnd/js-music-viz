@@ -24,6 +24,9 @@ function audioControlSetup() {
   // change visualizer
   visualizerBtn.addEventListener("click", visualizerButton);
 
+  // see music library
+  musicLibBtn.addEventListener("click", sidePanelView);
+
   // use spotify features
   spotifyBtn.addEventListener("click", spotifyButton);
 
@@ -177,4 +180,20 @@ function volumeSliding(e) {
     audio.volume = this.value / 100;
   }
   console.log(this.value);
+}
+
+function sidePanelView() {
+  const view = musicQueue.classList.contains("open");
+
+  if (!view) {
+    document.getElementById("mySidepanel").style.width = `${windowWidth / 3}px`;
+    document.getElementById("overlay").style.display = "block";
+
+    musicQueue.classList.add("open");
+  } else {
+    document.getElementById("mySidepanel").style.width = "0";
+    document.getElementById("overlay").style.display = "none";
+
+    musicQueue.classList.remove("open");
+  }
 }

@@ -9,19 +9,6 @@
     <!-- Fonts -->
     <link rel="stylesheet" href="assets/fonts/Arame/Arame.css" />
 
-    <!-- Bootstrap -->
-    <link
-      href="css/custom.css"
-      rel="stylesheet"
-      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-      crossorigin="anonymous"
-    ></script>
-
     <!-- CSS -->
     <link
       rel="stylesheet"
@@ -42,39 +29,36 @@
     />
   </head>
   <body>
+    <div id="overlay" onclick="sidePanelView()"></div>
+
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
-      <div class="container-fluid">
-        <button
-          class="navbar-toggler ms-auto"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+    <nav>
+      <div class="menu">
+        <button class="menu-button" id="menu-button" type="button">
+          <span class="material-icons-round" id="menu-icon"> menu </span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav m-auto text-center">
-            <li class="nav-item px-4">
-              <a class="nav-link" href="index.html">Welcome</a>
-            </li>
-            <li class="nav-item px-4">
-              <a class="nav-link" href="music.html">Music</a>
-            </li>
-          </ul>
-        </div>
+      </div>
+
+      <div id="pages">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="music.html">Music</a>
+          </li>
+        </ul>
       </div>
     </nav>
 
+    <div class="sketch" id="sketch"></div>
+
     <!-- controls -->
-    <div class="container-fluid fixed-bottom text-primary" id="musicContainer">
-      <div class="row text-primary">
-        <div class="col-3">
-          <div class="d-flex align-items-center">
-            <div class="flex-shrink-0">
+    <div class="row" id="musicContainer">
+      <div class="col-3" style="padding: 0px 15px">
+        <div class="row">
+          <div class="col-3" style="padding: 0">
+            <div class="album-cover">
               <img
                 src=""
                 style="width: 64px; height: 64px"
@@ -82,67 +66,87 @@
                 id="musicCover"
               />
             </div>
-            <div class="flex-grow-1 ms-3">
+          </div>
+
+          <div class="col-9" style="padding: 0">
+            <div class="music-info">
               <div class="musicInfo" id="musicInfo">
-                <h5 id="musicTitle">Song Name</h5>
+                <p id="musicTitle">Song Name</p>
                 <p id="musicArtist">Artist</p>
               </div>
               <audio src="" id="audio" type="audio/mpeg"></audio>
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="col-6">
-          <div
-            class="col d-flex justify-content-center align-items-center mt-2"
-            id="playControls"
-          >
-            <div id="shuffleMusic" class="action-btn">
-              <span class="material-icons-round" style="font-size: 25px">
-                shuffle
-              </span>
+      <div class="col-6" style="padding: 0">
+        <div class="row">
+          <div class="col-12" id="playControls" style="padding: 0px">
+            <div class="col-3" style="padding: 5px">
+              <div id="shuffleMusic">
+                <span class="material-icons-round" style="font-size: 25px">
+                  shuffle
+                </span>
+              </div>
             </div>
-            <div id="prev" class="action-btn mx-4">
-              <span class="material-icons-round" style="font-size: 30px">
-                skip_previous
-              </span>
+
+            <div class="col-2" style="padding: 5px">
+              <div id="prev">
+                <span class="material-icons-round" style="font-size: 30px">
+                  skip_previous
+                </span>
+              </div>
             </div>
-            <div id="play" class="action-btn mx-1">
-              <span class="material-icons-round" style="font-size: 30px">
-                play_arrow</span
-              >
+
+            <div class="col-2" style="padding: 5px">
+              <div id="play">
+                <span class="material-icons-round" style="font-size: 30px">
+                  play_arrow</span
+                >
+              </div>
             </div>
-            <div id="next" class="action-btn mx-4">
-              <span class="material-icons-round" style="font-size: 30px">
-                skip_next</span
-              >
+
+            <div class="col-2" style="padding: 5px">
+              <div id="next">
+                <span class="material-icons-round" style="font-size: 30px">
+                  skip_next</span
+                >
+              </div>
             </div>
-            <div id="repeat" class="action-btn">
-              <span class="material-icons-round" style="font-size: 25px">
-                repeat
-              </span>
+
+            <div class="col-3" style="padding: 5px">
+              <div id="repeat">
+                <span class="material-icons-round" style="font-size: 25px">
+                  repeat
+                </span>
+              </div>
             </div>
           </div>
 
-          <div class="progressContainer" id="progressContainer">
-            <div class="progress" id="progress"></div>
+          <div class="col-12" id="playControls" style="padding: 0px">
+            <div class="progressContainer" id="progressContainer">
+              <div class="progress" id="progress"></div>
+            </div>
           </div>
         </div>
+      </div>
 
-        <div id="audioFeatures" class="col-3 d-flex align-items-center">
-          <div id="visualizerIcon" class="visual px-2">
+      <div class="col-3" style="padding: 0px">
+        <div class="row" id="audioFeatures">
+          <div class="visual" id="visualizerIcon">
             <span class="material-icons" style="font-size: 25px" id="visualizer"
               >leaderboard</span
             >
           </div>
 
-          <div id="volumeIcon" class="vol">
+          <div class="vol" id="volumeIcon">
             <span class="material-icons" style="font-size: 25px" id="volume"
               >volume_up</span
             >
           </div>
 
-          <div class="slidecontainer px-2">
+          <div class="slidecontainer">
             <input
               type="range"
               min="0"
@@ -154,23 +158,17 @@
             />
           </div>
 
-          <div
-            id="musicLibrary"
-            class="musicLibrary px-2"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasQueue"
-            aria-controls="offcanvasQueue"
-          >
+          <div id="musicLibrary" class="musicLibrary">
             <span class="material-icons" style="font-size: 25px" id="queue"
               >queue_music</span
             >
           </div>
 
-          <div id="spotify" class="spotify px-2 mb-1">
+          <div class="spotify" id="spotify">
             <i class="fa fa-spotify" style="font-size: 25px"></i>
           </div>
 
-          <div id="deviceSound" class="deviceSound px-2">
+          <div class="deviceSound" id="deviceSound">
             <span
               class="material-icons"
               style="font-size: 25px"
@@ -179,22 +177,21 @@
             >
           </div>
         </div>
+      </div>
+    </div>
 
+    <div class="sidepanel" id="mySidepanel">
+      <div class="row">
         <div
-          class="offcanvas offcanvas-start bg-dark"
-          tabindex="-1"
-          id="offcanvasQueue"
-          aria-labelledby="offcanvasQueueLabel"
+          class="col-12"
+          style="padding: 10px 0px 0px 15px; font-size: 1.5rem"
         >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasQueueLabel">
-              Music Playlist
-            </h5>
-          </div>
-          <div class="container-fluid" id="offcanvas-body">
-            <div id="musicQueue"></div>
-          </div>
+          <p>Music Playlist</p>
         </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12" id="musicQueue"></div>
       </div>
     </div>
 

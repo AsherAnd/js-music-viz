@@ -22,6 +22,7 @@ const progressContainer = document.getElementById("progressContainer");
 const volumeBtn = document.getElementById("volume");
 const volumeSlider = document.getElementById("myRange");
 const musicQueue = document.getElementById("musicQueue");
+const musicLibBtn = document.getElementById("musicLibrary");
 const visualizerBtn = document.getElementById("visualizer");
 const spotifyBtn = document.getElementById("spotify");
 const deviceAudioBtn = document.getElementById("deviceAudio");
@@ -74,7 +75,9 @@ function windowResized() {
 
 // setup
 function setup() {
-  createCanvas(windowWidth, windowHeight * 0.88);
+  var myCanvas = createCanvas(windowWidth, windowHeight * 0.88);
+  myCanvas.parent("sketch");
+
   pixelDensity(1);
   angleMode(DEGREES);
   imageMode(CENTER);
