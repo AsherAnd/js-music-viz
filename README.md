@@ -8,6 +8,7 @@ This is a Javascript Music Visualizer I made with p5.JS which:
 
 ## Currently Working on:
 
-- Quick playlist display
+- ~~Quick playlist display~~
 - ~~Loop~~/Shuffle feature
 - Spotify integration
+- Audio selection from playlist display
